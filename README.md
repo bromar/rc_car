@@ -23,3 +23,29 @@ This invention is a transportation designed for your home. It is created to help
 * Joystick
 * LCD screen
 * Distance sensors
+
+&nbsp;
+
+<h4><em>MCU Pin Layout</em></h4>
+
+<h6>AVR MCU 1</h6>
+| Component | Pins
+| ------------------- | :------------------------: |
+| Data to 2nd AVR     | B4-B6                      |
+| Input from Arduino  | D0-D7                      |
+| Joystick            | A0, A1                     |
+| Motors              | B0-B3, A4-A7, C0-C3, C4-C7 |
+
+<h6>AVR MCU 2</h6>
+| Components | Pins
+| ------------------------ | :----------: |
+| Input from Arduino, AVR1 | A0-A7, B0-B7 |
+| LED Matrix               | C0-C2        |
+
+<h6>Arduino Uno</h6>
+| Component | Pins
+| ------------------------------- | :---------: |
+| Output to AVR2                  | Pins 2-9    |
+| Echo(helps measure distance)    | Pin 10      |
+| Trigger(helps measure distance) | Pin 11      |
+| Onboard LED                     | Pin 13      |
